@@ -1,0 +1,320 @@
+    1  /cita/local/bin/passwd
+    2  exit
+    3  python3
+    4  module load gcc
+    5  gcc --version
+    6  module load python
+    7  module list
+    8  module
+    9  q!
+   10  cd ~fhorrobin
+   11  ls -la
+   12  dir *.c
+   13  m *.c
+   14  *.c
+   15  cp main.c ~
+   16  pushd ~
+   17  ls -la *.c
+   18  gccmain.c
+   19  echo $PATH
+   20  ./A.OUT
+   21  ./a.out
+   22  ./a
+   23  module load python
+   24  pythonmain.py
+   25  python main.py
+   26  mkdir CTA200_2022
+   27  cd CTA200_2022
+   28  mkdir CTA200_2022/assignment_1
+   29  cd/mnt
+   30  cd /mnt
+   31  la -la
+   32  ls -la
+   33  /fs/lustre/scratch
+   34  cd /fs/lustre/scratch
+   35  ls -la
+   36  /mnt/scratch-lustre/student01
+   37  cd /mnt/scratch-lustre/student01
+   38  mkdir CTA200_2022
+   39  pwd
+   40  mkdir /mnt/scratch-lustre/student01/CTA200_2022
+   41  mkdir /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   42  vim readme.md
+   43  cd ~murray
+   44  find Hello.world
+   45  pwd
+   46  find Hellow_world.c
+   47  find . "Hello*.c"
+   48  find . "Hello_*.c"
+   49  pwd
+   50  find . "Hello_world.c"
+   51  man find
+   52  find . -file "Hello_world.c"
+   53  find . -name "Hello_world.c"
+   54  find . -name "Hello_*"
+   55  find . -name "Hello_*" 2>/dev/null
+   56  mv .
+   57  mc --help
+   58  mv --help
+   59  pwd
+   60  mv ./tmp/Hello_world.py -T /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   61  mv ./tmp/Hello_world.py -t /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   62  mv /tmp/Hello_world.py /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   63  $ mv /tmp/Hello_world.py /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   64  mv Hello_world.py /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   65  mv
+   66  pwd
+   67  mv Hello_world.py /mnt/scratch-lustre/student01/CTA200_2022/assignmenpwd
+   68  pwd
+   69  ls Papers/tmp/
+   70  mv Papers/tmp/Hello_world.c /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   71  cp Papers/tmp/Hello_world.c /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   72  pwd
+   73  cp /tmp/Hello_world.c /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   74  cp /tmp/Hello_world.py /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   75  cp Papers/tmp/Hello_world.py /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   76  cp /tmp/Hello_world.py /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   77  cp tmp/Hello_world.py /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   78  mv /mnt/scratch-lustre/student01/CTA200_2022/assignment_1 Hello_world_Henkel/py
+   79  mv mnt/scratch-lustre/student01/CTA200_2022/assignment_1 Hello_world_Henkel/py
+   80  pwd
+   81  cd /mnt/scratch-lustre/student01/CTA200_2022/assignment_1
+   82  pwd
+   83  ls
+   84  mv Hello_world.c Hello_world_Henkel.c
+   85  ls
+   86  mv Hello_world.py Hello_world_Henkel.py
+   87  ls
+   88  gcc Hello_world_Henkel.c -o Hellow_world.x
+   89  ls
+   90  ./Hellow_world.x
+   91  module list
+   92  module load python
+   93  python Hello_world_Henkel.py
+   94  vi Hello_world_Henkel.py
+   95  vi Hello_world_Henkel.c
+   96  python Hello_world_Henkel.py
+   97  gcc Hello_world_Henkel.c -o Hellow_world.x
+   98  ./Hellow_world.x
+   99  gcc Hello_world_Henkel.c -o output_c.txt
+  100  ./output_c.txt
+  101  ls
+  102  ./output_c.txt
+  103  pwd
+  104  echo $0
+  105  man ls
+  106  cd ~murray
+  107  cd murray
+  108  cd /murray
+  109  cd ~murray
+  110  ls -la
+  111  cd Papers/Hopkins/All_Feedback/second_draft/
+  112  ls -la
+  113  evince sfh_vs_fbmodel.pdf 
+  114  history
+  115  /cita/local/bin/passwd
+  116  whoami
+  117  ls | grep ms
+  118  cat ms.bib
+  119  grep genzel ms.bib
+  120  ls > junk.txt
+  121  mkdir CTA_200
+  122  mkdir CTA200_2022
+  123  PWD
+  124  pwd
+  125  cd bash
+  126  cd /cita/h/home-2/student01
+  127  mkdir CTA200_2022
+  128  ls -la
+  129  i
+  130  vi test.txt
+  131  ssh -g -L5909:lobster:5909 student01@gw.cita.utoronto.ca
+  132  exit
+  133  echo $host
+  134  echo $hostname
+  135  exit
+  136  cd git_example
+  137  cd git_example/
+  138  ls
+  139  cd git_example
+  140  git init
+  141  ls -la
+  142  git status
+  143  git add main.c main.py
+  144  pwd
+  145  git status
+  146  ls
+  147  ls -la
+  148  mkdir testgit
+  149  cd testgit
+  150  ls -la
+  151  more ../main.c 
+  152  cp ../main.c .
+  153  ls -la
+  154  git init
+  155  ls -la
+  156  cd .git/
+  157  ls -la
+  158  cd ..
+  159  ls -la
+  160  git status
+  161  git add main.c
+  162  git status
+  163  git commit
+  164  git status
+  165  vi main.c 
+  166  git status
+  167  git add main.c 
+  168  git commit
+  169  git status
+  170  more main.c
+  171  git status
+  172  more main.c
+  173  git checkout master
+  174  more main.c
+  175  git revert --hard
+  176  git revert
+  177  git checkout master
+  178  ls
+  179  git branch new_feature
+  180  git branch
+  181  git checkout new_feature
+  182  vim main.c
+  183  git add -u
+  184  git commit -m "Partially implimented feature"
+  185  git checkout master
+  186  git log
+  187  gcc main.c
+  188  more main.c
+  189  ls
+  190  git status
+  191  vim .gitignore
+  192  more.gitignore
+  193  more .gitignore
+  194  ls -la
+  195  git status
+  196  add gitignore
+  197  add .gitignore
+  198  git add .gitignore
+  199  gcc main.c
+  200  ls
+  201  git checkout master
+  202  git status
+  203  git add -u
+  204  git commit -m "fixed main.c"
+  205  git merge new_feature
+  206  git log
+  207  git branch
+  208  git branc-d new_feature
+  209  git branch new_feature
+  210  git branch -d  new_feature
+  211  ssh-keygen
+  212  cd
+  213  cd .ssh
+  214  ls -la
+  215  more id_rsa.pub
+  216  pwd
+  217  ssh-keygen
+  218  cd
+  219  cd git_example
+  220  cd testgit
+  221  git branch -M main
+  222  git branch
+  223  git status
+  224  git push -u origin main
+  225  cd .ssh
+  226  cd
+  227  cd .ssh
+  228  ls -la
+  229  more id_rsa.pub
+  230  git push -u origin main
+  231  pwd
+  232  gitstatus
+  233  git status
+  234  git add main.c
+  235  pwd
+  236  cd
+  237  ls
+  238  cd testgit/
+  239  git status
+  240  ls
+  241  rm :q
+  242  ls
+  243  git status
+  244  git remote add origin https://github.com/Jillian-Henkel/CITATEST.git
+  245  git remote -v
+  246  git push -u origin main
+  247  git remote rm origin
+  248  git remote -v
+  249  git remote add origin git@github.com:Jillian-Henkel/CITATEST.git
+  250  git push -u origin main
+  251  history
+  252  pwd
+  253  cd .student01
+  254  cd
+  255  cd /home/student01
+  256  ls
+  257  cd
+  258  cd /home/student01/CTA200_2022
+  259  ls
+  260  ls -la
+  261  pwd
+  262  ls
+  263  python Hello_world_Henkel.py > output_python.txt
+  264  module list
+  265  module load python
+  266  python Hello_world_Henkel.py > output_python.txt
+  267  cd
+  268  cd /cita/h/home-2/student01/CTA200_2022
+  269  python Hello_world_Henkel.py > output_python.txt
+  270  cd
+  271  cd /cita/h/home-2/student01/CTA200_2022/assignment_1
+  272  cd /mnt/scratch-lustre/student01/
+  273  mkdir CTA200H_2022
+  274  pwd
+  275  cd /mnt/scratch-lustre/student01/CTA200H_2022
+  276  git clone git@github.com:Jillian-Henkel/CITATEST.git
+  277  ls -la
+  278  module load python
+  279  jupyter notebook
+  280  cd /mnt/scratch-lustre/student01
+  281  ls -la
+  282  cd CTA200H_2022/
+  283  ls -la
+  284  cd CITATEST/
+  285  ls -la
+  286  cd ..
+  287  ls -la
+  288  cd CTA200_2022/
+  289  ls -la
+  290  cd /mnt/scratch-lustre/student01
+  291  ls
+  292  cd CTA200H_2022
+  293  ls
+  294  git clone https://github.com/CITA/CTA200H.git
+  295  ls
+  296  cd CTA200H
+  297  ls
+  298  module load python
+  299  jupyter notebook
+  300  history
+  301  pwd
+  302  ls
+  303  cd CTA200_2022
+  304  ls
+  305  pwd
+  306  ls
+  307  cd /mnt/scratch-lustre/student01
+  308  ls
+  309  cd CTA200_2022
+  310  ls
+  311  cd assignment_1
+  312  ls
+  313  module load python
+  314  python Hellow_world_Henkel.py > output_python.txt
+  315  python Hello_world_Henkel.py > output_python.txt
+  316  gcc Hello_world_Henkel.c -o Hellow_world.x
+  317  ./output_c.txt > output_c.txt
+  318  ./Hellow_world.x  > output_c.txt
+  319  more output_c.txt
+  320  history > history.txt
