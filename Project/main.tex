@@ -35,10 +35,24 @@ In my script, I utilize the fact that I can produce the real and imaginary parts
 \section*{Exercise 3}
 When plotting Stokes Q and U, I found that in the sinusoidal graphs produced, a lower absolute value of Faraday depth results in a longer wavelength, while a higher absolute value of Faraday depth results in a shorter wavelength. I also found that when the initial polarization angle is increased, the graphs of Stokes Q and U are shifted to the right. Increased frequency led to slower variance of Stokes Q and U.
 
+\begin{figure}[hbt!]
+\centering
+\includegraphics[scale = 0.44]{stokes.pdf}
+\label{fig:rel_err}
+\caption{Stokes Q and U plotted with a value of zero for Faraday depth.}
+\end{figure}
+
+\begin{figure}[hbt!]
+\centering
+\includegraphics[scale = 0.44]{stokes1.pdf}
+\label{fig:rel_err}
+\caption{Stokes Q and U plotted with a Faraday depth value of 150 rad m^-2}
+\end{figure}
+
 \section*{Exercise 4}
 To enter the data into RM-Tools, I created dataframes using Pandas, saved them to my computer, and used the RM-Tools in the command line.
 \section*{Exercise 5}
-A larger frequency range results in higher resolution plots. Increasing the number of channels also achieves this. When comparing the fine and coarse version of plots using VLASS frequencies, we find that the fine plot is of higher resolution, meaning we can accurately study the plots over a larger range of Faraday depths. More detailed outputs are also produced using GMIMS frequencies, than with any other frequency range, and GMIMS frequencies have the largest range and highest values.
+A larger frequency range results in higher resolution plots and functions that appear more narrow. Increasing the number of channels also achieves this. When comparing the fine and coarse version of plots using VLASS frequencies, we find that the fine plot is of higher resolution, meaning we can accurately study the plots over a larger range of Faraday depths. Narrower and more detailed outputs are also produced using GMIMS frequencies than with any other frequency range, and GMIMS frequencies have the largest range and highest values.
 \begin{figure}[hbt!]
 \centering
 \includegraphics[scale = 0.44]{VLASS_coarse2.png}
