@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{graphicx}
+
+
+\title{ CTA200 Project}
+\author{Jillian Henkel}
+\date{May 2022}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+This project is focused on understanding the manner in which various physical conditions can affect observations of the magnetic field made by studying the Faraday rotation of polarized radio emission. This was achieved by creating a python script containing functions that use equations for Stokes Q and U parameters as a function of frequency to output simulated Stokes Q and U data. The script also contains a function that outputs plots of Q and U data as a function of frequency, so that the effects of changing various parameters can be observed. It also creates a file containing the simulated Stokes Q and U data, as well as the frequencies they are functions of, so that it can be analyzed using the RM-Tools package. As we wanted to study Q and U behavior on a Faraday complex line of sight, the script allows a user to add two Q and U values together, and output a file to be used with RM-Tools as above.
+\section*{Exercise 1}
+To install RM-Tools on my computer, I used pip install RM-Tools in the command line.
+\section*{Exercise 2}
+
+\begin{equation}
+  \centerting
+    \label{eq:1}
+    \bm{Q+iU}  = {Pe^{2i\chi}} 
+\end{equation}
+
+\begin{equation}
+  \centerting
+    \label{eq:2}
+    \bm{\chi(\lambda^{2})}  = \chi_{0} +\lambda^{2} \ph
+\end{equation}
+Equations (1) and (2) were proved in the project description. Combining them, we can produce the equation:
+$$Q+iU = Pcos(\chi_{0}+\phi \lambda^{2}) + iPsin(\chi_{0}+\phi \lambda^{2})$$
+In my script, I utilize the fact that I can produce the real and imaginary parts of an equation with numpy instead of using Euler's formula.
+\section*{Exercise 3}
+When plotting Stokes Q and U, I found that in the sinusoidal graphs produced, a lower absolute value of Faraday depth results in a longer wavelength, while a higher absolute value of Faraday depth results in a shorter wavelength. I also found that when the initial polarization angle is increased, the graphs of Stokes Q and U are shifted to the right. Increased frequency led to slower variance of Stokes Q and U.
+
+\section*{Exercise 4}
+To enter the data into RM-Tools, I created dataframes using Pandas, saved them to my computer, and used the RM-Tools in the command line.
+\section*{Exercise 5}
+A larger frequency range results in higher resolution plots. Increasing the number of channels also achieves this. When comparing the fine and coarse version of plots using VLASS frequencies, we find that the fine plot is of higher resolution, meaning we can accurately study the plots over a larger range of Faraday depths. More detailed outputs are also produced using GMIMS frequencies, than with any other frequency range, and GMIMS frequencies have the largest range and highest values.
+\begin{figure}[hbt!]
+\centering
+\includegraphics[scale = 0.44]{VLASS_coarse2.png}
+\label{fig:rel_err}
+\caption{Faraday Dispersion Function and Rotation Measure Spread Function produced using the coarsely spaced VLASS Frequencies. These plots are of lower resolution than those produced using finely spaced frequencies.}
+\end{figure}
+
+\begin{figure}[hbt!]
+\centering
+\includegraphics[scale = 0.44]{VLASS_fine2.png}
+\label{fig:rel_err}
+\caption{Faraday Dispersion Function and Rotation Measure Spread Function produced using the finely spaced VLASS Frequencies. These plots are of higher resolution than those produced using coarsely spaced frequencies.}
+\end{figure}
+
+\begin{figure}[hbt!]
+\centering
+\includegraphics[scale = 0.44]{GMIMS2.png}
+\label{fig:rel_err}
+\caption{Faraday Dispersion Function and Rotation Measure Spread Function produced using the GMIMS Frequencies. These plots are of higher resolution than those produced using smaller frequency ranges.}
+\end{figure}
+
+\section*{Exercise 6}
+To be distinctly observed, two components along a faraday-complex line of sight must have distinct faraday depths. If they have the same value for faraday depth, or have close-together faraday depths in low resolution plots, then the two-component nature of the plots will not be observed, and it will appear as though there is only a single component. Thus, mistakes in understanding the true nature of plots can be prevented by using wide, finely spaced, frequency ranges.
+
+\begin{figure}[hbt!]
+\centering
+\includegraphics[scale = 0.44]{comp2_f2.png}
+\label{fig:rel_err}
+\caption{Faraday Dispersion Function and Rotation Measure Spread Function along Faraday-complex line of sight. Both components have the same Faraday Depth, resultinfg in the apperance of a single peak.}
+\end{figure}
+
+\begin{figure}[hbt!]
+\centering
+\includegraphics[scale = 0.44]{comp_df_fig2.png}
+\label{fig:rel_err}
+\caption{Faraday Dispersion Function and Rotation Measure Spread Function along Faraday-complex line of sight. The two components have significantly different Faraday Depth values, resulting in two clearly distinguishable components.}
+\end{figure}
+
+
+
+
+
+
+\end{document}
